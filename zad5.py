@@ -1,39 +1,27 @@
 a = int(input())
 b = int(input())
 c = int(input())
-if (a > b) and (a > c) and (b > c):
+if (a >= b) and (b >= c):
     print(a)
     print(c)
     print(b)
-if (a > b) and (a > c) and (c > b):
-    print(a)
-    print(b)
-    print(c)
-elif (b > a) and (b > c) and (a > c):
-    print(b)
-    print(c)
-    print(a)
-elif (b > a) and (b > c) and (c > a):
-    print(b)
-    print(a)
-    print(c)
-elif (c > a) and (c > b) and (a > b):
+elif (c >= a) and (a >= b):
     print(c)
     print(b)
     print(a)
-elif (c > a) and (c > b) and (b > a):
+elif (b >= a) and (a >= c):
+    print(b)
+    print(c)
+    print(a)
+elif (c >= b) and (b >= a):
     print(c)
     print(a)
     print(b)
-elif (a == b) and (b > c):
-    print(a)
-    print(c)
-    print(b)
-elif (b == c) and (c > a):
+elif (b >= c) and (c >= a):
     print(b)
     print(a)
     print(c)
-elif (a == b) and (b == c):
+elif (a >= c) and (c >= b):
     print(a)
     print(b)
     print(c)

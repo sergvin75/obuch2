@@ -4,6 +4,7 @@ b = int(input())
 c = int(input())
 p = (a+b+c)/2
 print(p)
+print(p)
 print(math.sqrt(p*(p-a)*(p-b)*(p-c)))
 
 

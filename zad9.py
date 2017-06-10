@@ -1,10 +1,12 @@
-a,b,c,d=int(input()),int(input()),int(input()),int(input())
-print(end='')
-for i in range(a,b+1):
-    print('\t',i, end='')
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+for i in range(c, d + 1):
+    print('\t' + str(i), end='')
 print()
-for j in range(c,d+1):
-    print(j,end='')
-    for i in range(a,b+1):
-        print('\t',i*j,end='')
-    print()#
+for i in range(a, b + 1):
+    print(str(i) + '\t', end='')
+    for j in range(c, d + 1):
+        print(str(i * j) + '\t', end='')
+    print()

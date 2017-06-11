@@ -1,12 +1,7 @@
-#Ввод строки
 s = input()
-#Смена регистра
 u = s.lower()
-#Поиск численного содержания символов в строке
-b = int(s.count('g'))
-d = int(s.count('c'))
-#Общее кол-во символов
-h = int(len(s))
-#Сложение численного кол-ва g & c
+b = int(u.count('g'))
+d = int(u.count('c'))
+h = int(len(u))
 f = b + d
 print((f / h) * 100)

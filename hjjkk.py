@@ -1,7 +1,7 @@
 # USAGE
 # python adjust_gamma.py --image example_01.png
 
-# import the necessary packages
+# import the necessary package
 from __future__ import print_function
 import numpy as np
 import argparse

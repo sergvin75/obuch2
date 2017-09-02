@@ -1,7 +1,5 @@
 n=int(input())
-if 1 <= n <= 100:
-    while a <= 100:
-    m = int(input())
+if (n//10)%10 == 1:
     print (n,"программистов")
 elif n%10 == 1:
     print (n," программист")
@@ -17,3 +15,12 @@ while a <= 100:
         continue
     elif 10 <= a <= 100:
         print(a)
+
+i = 0
+while i < 5:
+    print('*')
+    if i % 2 == 0:
+        print('**')
+    if i > 2:
+        print('***')
+    i = i + 1

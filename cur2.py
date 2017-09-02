@@ -1,26 +1,11 @@
-n=int(input())
-if (n//10)%10 == 1:
-    print (n,"программистов")
-elif n%10 == 1:
-    print (n," программист")
-elif n%10 == 2 or n%10 ==3 or n%10 ==4:
-    print (n, "программиста")
+n = int(input())
+b = 0
+if 1 <= n <= 100:
+    while n > 0:
+        m = int(input())
+        n -= 1
+        b += m
+    print(b)
 else:
-    print (n,"программистов")
+    print(n, "неправильное число")
 
-a = int(input())
-while a <= 100:
-    if a < 10:
-        a = int(input())
-        continue
-    elif 10 <= a <= 100:
-        print(a)
-
-i = 0
-while i < 5:
-    print('*')
-    if i % 2 == 0:
-        print('**')
-    if i > 2:
-        print('***')
-    i = i + 1

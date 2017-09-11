@@ -22,3 +22,20 @@ class Hero():
 
     def set_health(self, new_health):
         self.health = new_health
+
+class SuperHero(Hero):
+    """Class to create Super Hero"""
+    def __init__(self, name, level,race, magiclevel):
+        """Initiate our Super hero"""
+        super().__init__(name, level,race)
+        self.magiclevel = magiclevel
+        self.magic = 100
+
+    def makemagic(self):
+        """Use magic"""
+        self.magic -=10
+
+    def show_hero(self):
+        """Print all parameters of Hero"""
+        discription = (self.name + " Level is " + str(self.level) + " Race is " + self.race + " Health is " + str(self.health) + " Magic is " + str(self.magic)).title()
+        print(discription)

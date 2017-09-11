@@ -18,3 +18,4 @@ mysuperhero.show_hero()
 
 mysuperhero.magic = 10
 mysuperhero.show_hero()
+mysuperhero.show_hero()

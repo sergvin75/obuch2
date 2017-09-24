@@ -1,7 +1,9 @@
 class Hero():
     """Class to Create Hero for our Game"""
     def __init__(self, name, level,race):
-        """Initiate our hero"""
+        """Initiate our hero
+        :rtype: object
+        """
         self.name = name
         self.level = level
         self.race = race
@@ -29,13 +31,13 @@ class SuperHero(Hero):
         """Initiate our Super hero"""
         super().__init__(name, level,race)
         self.magiclevel = magiclevel
-        self.magic = 100
+        self.__magic = 100
 
     def makemagic(self):
         """Use magic"""
-        self.magic -=10
+        self.__magic -=10
 
     def show_hero(self):
         """Print all parameters of Hero"""
-        discription = (self.name + " Level is " + str(self.level) + " Race is " + self.race + " Health is " + str(self.health) + " Magic is " + str(self.magic)).title()
+        discription = (self.name + " Level is " + str(self.level) + " Race is " + self.race + " Health is " + str(self.health) + " Magic is " + str(self.__magic)).title()
         print(discription)

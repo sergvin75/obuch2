@@ -17,12 +17,15 @@ mytext =    "Vasya aaaaaaaaa 1972, Kolya - 19872: Olesya 1981, aaaaaaa@intel.com
 [0-9]{3} = ищем цифры от 0 до 9 и таких должно быть 3
 \w{6} - слова из 6 алфавитных символа
 \w{6}\s - слова из 6 алфавитных символа и в конце пробел
+[A-Z][a-z]+ - первый символ [A-Z], [a-z]+ - сколько угодно маленьких символов
+\w+\.\w+ - слово точка слово
+
 
 
 """
 
 
-textlookfor = r"\w{6}\s"
+textlookfor = r"@\w+\.\w+"
 allresults = re.findall(textlookfor, mytext)
 
 print(allresults)
